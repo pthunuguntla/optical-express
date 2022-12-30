@@ -28,7 +28,7 @@ allLinks.forEach((link) => {
 
         if (href !== '#' && href.startsWith('#')) {
             const el = document.querySelector(href);
-            el.scrollIntoView({ behavior: "smooth" })
+            el.scrollIntoView({ behavior: "smooth", block: "start" })
         }
 
         if (link.classList.contains('main-nav-link')) {

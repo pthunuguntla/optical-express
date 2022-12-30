@@ -246,6 +246,11 @@
     .experience strong {
         font-size: 1.4rem;
     }
+
+    .featured-title {
+        font-size: 1rem;
+    }
+
     /* build mobile navigation*/
 }
 
