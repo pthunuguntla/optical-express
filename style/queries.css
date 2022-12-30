@@ -1,0 +1,380 @@
+/* rem and em do NOT depend on html font-size in media queries! Instead, 1rem = 1em = 16px */
+
+
+/**************************/
+
+
+/* BELOW 1200px (Smaller desktops) */
+
+
+/**************************/
+
+@media(max-width: 75em) {
+    .hero-image {
+        width: 90%;
+    }
+    .welcome-text {
+        font-size: 4.8rem;
+    }
+    .welcome-message {
+        font-size: 2.6rem;
+        line-height: 1.4;
+    }
+    .delivered-customers {
+        margin-top: 4rem;
+    }
+    .customers img {
+        height: 4rem;
+        width: 4rem;
+    }
+    .delivered-text {
+        font-size: 1.4rem;
+    }
+    .eyewear-section,
+    .products-section,
+    .brands-section,
+    .featured-section {
+        padding: 0 4.8rem 9.6rem 4.8rem;
+    }
+    .ourstaff-section {
+        padding: 4.8rem 3.2rem;
+    }
+    .contact-us-section,
+    .footer {
+        padding: 4.8rem;
+    }
+    .logos img {
+        height: 7rem;
+        padding: 1rem 2rem;
+    }
+}
+
+
+/**************************/
+
+
+/* BELOW 1000px (Smaller desktops) */
+
+
+/**************************/
+
+@media(max-width: 63em) {
+    html {
+        font-size: 57.5%;
+    }
+    /* .hero {
+        grid-template-columns: 1fr 1fr;
+    } */
+    .welcome-text {
+        font-size: 4rem;
+    }
+    .welcome-message {
+        font-size: 2rem;
+        line-height: 1.4;
+    }
+    .hero-image {
+        width: 100%;
+    }
+    .delivered-customers {
+        gap: 2.4rem;
+    }
+    .delivered-text {
+        font-size: 1.2rem;
+    }
+    .btn:link,
+    .btn:visited {
+        padding: 1.2rem 2.4rem;
+    }
+    .customers img {
+        height: 3.4rem;
+        width: 3.4rem;
+    }
+    .copyright {
+        margin-top: auto;
+        font-size: 1.2rem;
+        color: #006666;
+    }
+    /* .product-item img {
+        height: 6rem;
+        margin-bottom: 3.2rem;
+    } */
+    .product-name {
+        font-size: 1.2rem;
+    }
+    .product-price {
+        font-size: 1.4rem;
+    }
+    .detail-text {
+        font-size: 1.4rem;
+    }
+    .name {
+        font-size: 1.6rem;
+    }
+    .qualification {
+        font-size: 1.2rem;
+    }
+    .logos {
+        padding-top: 2.2rem;
+    }
+    .logos img {
+        padding: 0;
+    }
+    .btn-mobile-nav {
+        display: block;
+        z-index: 9999;
+    }
+    .navigation {
+        background-color: rgba(255, 255, 255, 0.9);
+        -webkit-backdrop-filter: blur(5px);
+        backdrop-filter: blur(10px);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        transform: translateX(100%);
+        display: flex;
+        align-content: center;
+        justify-content: center;
+        transition: all 0.5s ease-in;
+        opacity: 0;
+        pointer-events: none;
+        visibility: hidden;
+        /* display: none; */
+    }
+    .nav-open .navigation {
+        /* display: block; */
+        opacity: 1;
+        pointer-events: auto;
+        visibility: visible;
+        transform: translateX(0);
+    }
+    .nav-open .sub-nav {
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        justify-content: center;
+        gap: 4.8rem;
+    }
+    .nav-open .header-icon[name="menu-outline"] {
+        display: none;
+    }
+    .nav-open .header-icon[name="close-outline"] {
+        display: block;
+    }
+    .products {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: 4.8rem;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        display: inline-block;
+        font-size: 3.2rem;
+        padding: 1.6rem 3.2rem;
+    }
+}
+
+
+/**************************/
+
+
+/* BELOW 800px (Smaller desktops) */
+
+
+/**************************/
+
+@media(max-width:51em) {
+    html {
+        font-size: 52.5%;
+    }
+}
+
+
+/**************************/
+
+
+/* BELOW 750px (Smaller desktops) */
+
+
+/**************************/
+
+@media(max-width:47em) {
+    html {
+        font-size: 52.5%;
+    }
+    .btn:link,
+    .btn:visited {
+        padding: 1rem 2rem
+    }
+    .hero {
+        gap: 6.4rem;
+        padding: 0 4.8rem;
+    }
+    .eyewear-image {
+        height: 15rem;
+    }
+    .name {
+        font-size: 1.4rem;
+    }
+    .qualification {
+        font-size: 1rem;
+    }
+    .sub-nav {
+        gap: 1.6rem;
+        justify-content: space-between;
+    }
+    .main-nav-link:link,
+    .main-nav-link:visited {
+        padding: 1.6rem 3.2rem;
+    }
+    .aboutus-img {
+        height: 45rem;
+    }
+    .about-us-text {
+        font-size: 1.4rem;
+        line-height: 1.25;
+    }
+    .logos img {
+        height: 80%;
+    }
+    .secondary-heading {
+        font-size: 3rem;
+    }
+    .staff-container {
+        gap: 1.8rem;
+    }
+    .experience strong {
+        font-size: 1.4rem;
+    }
+    /* build mobile navigation*/
+}
+
+
+/**************************/
+
+
+/* BELOW 630px (Smaller desktops) */
+
+
+/**************************/
+
+@media(max-width:38em) {
+    html {
+        font-size: 42.5%;
+    }
+    .hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    .delivered-customers {
+        justify-content: center;
+        flex-direction: column;
+    }
+    .delivered-text {
+        font-size: 1.6rem;
+    }
+    .customers img {
+        height: 4.8rem;
+        width: 4.8rem;
+    }
+    .hero-images {
+        flex-direction: row;
+        overflow-x: hidden;
+    }
+    .hero-image {
+        width: 50%;
+    }
+}
+
+
+/**************************/
+
+
+/* BELOW 544px (Smaller desktops) */
+
+
+/**************************/
+
+@media (max-width: 34em) {
+    .eyewear {
+        grid-template-columns: 1fr;
+    }
+    .eyewear-image {
+        height: 30rem;
+    }
+    .staff-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 2.4rem;
+    }
+    .name {
+        font-size: 2.2rem
+    }
+    .qualification {
+        font-size: 1.6rem;
+    }
+    .experience {
+        font-size: 1.2rem;
+    }
+    .details-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .map {
+        height: 40rem;
+    }
+    .contact-details {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        column-gap: 4.8rem;
+        justify-content: center;
+        align-items: center;
+    }
+    .aboutus-section {
+        padding: 0 4.8rem;
+    }
+    .aboutus-section-grid {
+        grid-template-columns: 1fr;
+    }
+    .aboutus-content {
+        grid-row: 1;
+    }
+    .about-us-text {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        text-align: center;
+    }
+    .testimonials-section {
+        padding: 9.6rem 4.8rem;
+    }
+    .signup-section {
+        padding: 4.8rem 0;
+    }
+    .form-wrapper {
+        grid-template-columns: 1fr;
+    }
+    .form-left {
+        align-items: center;
+    }
+    .form-right {
+        grid-column: 1/-1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .form-message {
+        width: 70%;
+        padding: 1.6rem 0rem 15rem 3.2rem;
+    }
+    .footer-section {
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .logo-section {
+        margin-top: 1.6rem;
+        grid-row: 2;
+        grid-column: 1/-1;
+        justify-self: center;
+        align-items: center;
+    }
+    .logos img {
+        height: 100%;
+    }
+}
