@@ -305,6 +305,7 @@ body {
 
 .eyewear-image {
     height: 30rem;
+    cursor: pointer;
     /* border: 1px solid lightgray; */
 }
 
@@ -346,6 +347,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .product-item:hover {
